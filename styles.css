@@ -1,0 +1,24 @@
+:root{
+  --bg:#f7f7fb;
+  --card:#ffffff;
+  --text:#111827;
+  --accent:#2563eb;
+}
+
+*{box-sizing:border-box}
+body{font-family:Inter,Segoe UI,Roboto,Arial,sans-serif;margin:0;background:var(--bg);color:var(--text);line-height:1.5}
+.container{max-width:900px;margin:0 auto;padding:24px}
+.site-header{background:linear-gradient(90deg,#eef2ff,#ffffff);padding:28px 0;border-bottom:1px solid rgba(0,0,0,0.05)}
+.name{margin:0;font-size:28px}
+.role{margin:6px 0 0;color:#374151}
+.card{background:var(--card);padding:18px;margin-top:18px;border-radius:8px;box-shadow:0 6px 18px rgba(15,23,42,0.04)}
+.site-footer{padding:18px 0;margin-top:24px;text-align:center;color:#6b7280}
+button{background:var(--accent);color:#fff;border:0;padding:10px 14px;border-radius:6px;cursor:pointer}
+button:hover{opacity:0.95}
+textarea{width:100%;padding:8px;border:1px solid #e5e7eb;border-radius:6px}
+@media(min-width:800px){.name{font-size:36px}}
+
+/* dark theme */
+body.dark{background:#0b1220;color:#e6eef8}
+body.dark{--card:#071022;--accent:#7dd3fc}
+body.dark .site-header{background:linear-gradient(90deg,#071022,#082033)}
